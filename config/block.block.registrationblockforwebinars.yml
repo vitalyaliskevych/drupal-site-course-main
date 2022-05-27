@@ -1,0 +1,45 @@
+uuid: 1bd3449d-ceee-4ebb-84d4-1c5419a53025
+langcode: en
+status: true
+dependencies:
+  module:
+    - bda_m
+    - context
+    - system
+  theme:
+    - bda_theme
+id: registrationblockforwebinars
+theme: bda_theme
+region: sidebar_second
+weight: -9
+provider: null
+plugin: registration_for_events_form_block
+settings:
+  id: registration_for_events_form_block
+  label: Webinars
+  label_display: visible
+  provider: bda_m
+visibility:
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  context:
+    id: context
+    negate: null
+    values: ''
+  request_path:
+    id: request_path
+    negate: false
+    pages: /news/view

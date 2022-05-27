@@ -1,0 +1,56 @@
+uuid: 98b51f2d-ec1b-4353-8737-e1631ea18c55
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.image
+    - media.type.remote_video
+    - node.type.article
+    - node.type.conference
+    - node.type.landing
+    - node.type.news
+    - node.type.page
+    - node.type.slides
+    - node.type.test
+  module:
+    - contextual
+    - file
+    - media
+    - node
+    - system
+    - toolbar
+    - tour
+id: moderator
+label: Moderator
+weight: -7
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access toolbar'
+  - 'access tour'
+  - 'create news content'
+  - 'delete any image media'
+  - 'delete any media'
+  - 'delete any news content'
+  - 'delete any remote_video media'
+  - 'delete own news content'
+  - 'edit any article content'
+  - 'edit any conference content'
+  - 'edit any image media'
+  - 'edit any landing content'
+  - 'edit any news content'
+  - 'edit any page content'
+  - 'edit any remote_video media'
+  - 'edit any slides content'
+  - 'edit any test content'
+  - 'edit own news content'
+  - 'publication date selection'
+  - 'revert all revisions'
+  - 'update any media'
+  - 'view all revisions'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view the administration theme'

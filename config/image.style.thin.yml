@@ -1,0 +1,15 @@
+uuid: ef334dfe-a77b-47cf-90c6-797d485570d2
+langcode: en
+status: true
+dependencies: {  }
+name: thin
+label: 'Thin(Scale 300x150)'
+effects:
+  2c78ca62-c561-491e-b9bf-451a392c26da:
+    uuid: 2c78ca62-c561-491e-b9bf-451a392c26da
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 300
+      height: 150
+      anchor: center-center

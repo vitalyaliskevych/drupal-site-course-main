@@ -1,0 +1,27 @@
+uuid: f442f52d-fdd0-465c-b40f-1cb961570f90
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.conference.field_paragraphs
+    - node.type.conference
+  module:
+    - entity_reference_revisions
+    - user
+id: node.conference.default
+targetEntityType: node
+bundle: conference
+mode: default
+content:
+  field_paragraphs:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  links: true
